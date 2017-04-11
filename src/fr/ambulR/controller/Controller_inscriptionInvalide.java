@@ -22,8 +22,8 @@ public class Controller_inscriptionInvalide extends HttpServlet  {
 	@Autowired
 	private patientDAO patient1DAO;
 
-	@Autowired
-	private Patient inscrit2;
+	
+	private Patient inscrit2= new Patient();
 	
 
 	 
