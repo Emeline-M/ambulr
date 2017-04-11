@@ -10,15 +10,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 
-<!-- CSS Files -->
+<!-- CSS Files 
 <link rel="stylesheet" href="<c:url value="/css/main.css" />">
 <link rel="stylesheet" href="<c:url value="/css/inscription.css" />">
 <link rel="stylesheet" href="<c:url value="/css/pageaccueil.css" />">
 <link rel="stylesheet" href="<c:url value="/css/pagemalaise.css" />">
 <link rel="stylesheet"
 	href="<c:url value="/css/pageurgenceindex.css" />">
-<link rel="stylesheet" href="<c:url value="/css/pageurgences.css" />">
+<link rel="stylesheet" href="<c:url value="/css/pageurgences.css" />">   -->
 
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 
 
 <title><tiles:insertAttribute name="title" /></title>
@@ -28,7 +30,11 @@
 <body>
 
 	<tiles:insertAttribute name="menu" />
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<tiles:insertAttribute name="body" />
+
+	
 
 </body>
 
