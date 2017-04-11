@@ -24,9 +24,9 @@ public class Patient extends Connexion {
     @Column (name="patient_prenom")
     private String prenom;
     
-    @Column (name="patient_age")
-    @NotEmpty(message="rentrer l'age")
-    private String age;
+    @Column (name="patient_DateDeNaissance")
+    @NotEmpty(message="rentrer votre date de Naissance")
+    private String dateDeNaissance;
     
     @Column (name="patient_sexe")
     @NotEmpty(message="rentrer le sexe")
@@ -89,11 +89,11 @@ public class Patient extends Connexion {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-    public String getAge() {
-        return age;
+    public String getDateDeNaissance() {
+        return dateDeNaissance;
     }
-    public void setAge(String age) {
-        this.age = age;
+    public void setAge(String dateDeNaissance) {
+        this.dateDeNaissance = dateDeNaissance;
     }
     public String getSexe() {
         return sexe;
