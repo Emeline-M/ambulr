@@ -355,11 +355,20 @@ html[xmlns] #menu-bar {
 }
 
 .flex-Crea2_contactus {
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
 }
-
 
 
 

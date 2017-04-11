@@ -15,13 +15,18 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <ul class="nav navbar-nav">
+        <li class="nav navbar-nav"><a href="accueil">Home</a></li>
+        </ul>
+    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
          <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil / inscription<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Voir son profil</a></li>
-            <li><a href="#">Modifier son profil</a></li>
+            <li><a href="inscription">Voir son profil</a></li>
+            <li><a href="profil">Modifier son profil</a></li>
           </ul>
         </li>
         
@@ -29,25 +34,54 @@
          <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informations <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Formules</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Témoignages</a></li>
+            <li><a href="offres">Formules</a></li>
+            <li><a href="modules">Modules</a></li>
+            <li><a href="temoignages">Témoignages</a></li>
             
           </ul>
         </li>
+         
+        <li class="nav navbar-nav"><a href="auteurs">Qui sommes nous?</a></li>
+        <li class="nav navbar-nav"><a href="contact">Nous contacter</a></li>
+        <li class="nav navbar-nav"><a href="urgenceindex">Urgences</a></li>
+  		<li class="nav navbar-nav"><a href="FAQ">FAQ</a></li>
+  		<li class="nav navbar-nav"><a href="API_google">GoogleAPI</a></li>        
         
-                <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informations <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Formules</a></li>
-            <li><a href="#">Modules</a></li>
-            <li><a href="#">Témoignages</a></li>
             
-          </ul>
-        </li>
+        
+        
+        
+        
         
       </ul>
    
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+
+<!-- 
+
+<ul id="menu-bar">
+	<li><a href="accueil">Home</a></li>
+	<li><a href="#">Profil / inscription</a>
+		<ul>
+			<li><a href="inscription">Inscription</a></li>
+			<li><a href="profil">Modifier son profil</a></li>
+		</ul></li>
+	<li><a href="#">Informations</a> <!-- class="active"
+		<ul>
+			<li><a href="offres">Les formules</a></li>
+			<li><a href="modules">Les modules</a></li>
+			<li><a href="temoignage">Témoignages</a></li>
+		</ul></li>
+		
+	<li><a href="auteurs">Qui sommes nous?</a></li>
+	<li><a href="contact">Nous contacter</a></li>
+	<li><a href="urgenceindex">Urgences</a></li>
+	<li><a href="FAQ">FAQ</a></li>
+	<li><a href="API_google">GoogleAPI</a></li>
+	<li class="logo"><img src="/AmbulR/images/image.png" width="50px"
+		height="50px" align="right"></li>
+</ul> -->

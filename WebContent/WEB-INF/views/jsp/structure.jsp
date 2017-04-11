@@ -17,7 +17,8 @@
 <link rel="stylesheet" href="<c:url value="/css/pagemalaise.css" />">
 <link rel="stylesheet"
 	href="<c:url value="/css/pageurgenceindex.css" />">
-<link rel="stylesheet" href="<c:url value="/css/pageurgences.css" />">   -->
+<link rel="stylesheet" href="<c:url value="/css/pageurgences.css" />">  
+<link rel="stylesheet" href="<c:url value="/css/Suppl_temoignage.css" />"> -->
 
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
