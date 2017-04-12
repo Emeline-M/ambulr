@@ -13,7 +13,7 @@ import fr.ambulR.model.Urgence_patient;
 
 @Repository
 @Transactional
-public class urgenceDAO extends DAO<Urgence_patient>{
+public class UrgenceDAO extends DAO<Urgence_patient>{
 	
 	
 	@Override

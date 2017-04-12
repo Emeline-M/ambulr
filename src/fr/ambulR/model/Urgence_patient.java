@@ -20,7 +20,7 @@ public class Urgence_patient {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column (name="id_patient")
-    private String id_patient;
+    private int id_patient;
 	
 	@Column (name="nom_patient")
     private String nom;
@@ -40,11 +40,11 @@ public class Urgence_patient {
 	@Column (name="long_patient")
     private double long_patient;
 
-	public String getId_patient() {
+	public int getId_patient() {
 		return id_patient;
 	}
 
-	public void setId_patient(String id_patient) {
+	public void setId_patient(int id_patient) {
 		this.id_patient = id_patient;
 	}
 

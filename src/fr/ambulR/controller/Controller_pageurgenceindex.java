@@ -10,22 +10,27 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import javax.xml.ws.spi.http.HttpContext;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
+import fr.ambulR.dao.UrgenceDAO;
+import fr.ambulR.dao.patientDAO;
 import fr.ambulR.model.ConfirmPassword;
 import fr.ambulR.model.Connexion;
 import fr.ambulR.model.Patient;
+import fr.ambulR.model.Urgence_patient;
 import fr.ambulR.validator.PatientValidator;
 
-@Controller
+@RestController
 public class Controller_pageurgenceindex extends HttpServlet {
-	
+	private static final long serialVersionUID = 1L;
 	
 	@Override
 	   public void init(ServletConfig config) throws ServletException {
@@ -33,6 +38,9 @@ public class Controller_pageurgenceindex extends HttpServlet {
 	      SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, config.getServletContext());
 	    }
 	
+	
+	@Autowired
+	private UrgenceDAO urgenceDAO;
 	
 	
 
@@ -91,6 +99,15 @@ public class Controller_pageurgenceindex extends HttpServlet {
 		System.out.println(LaDateOji);
 		System.out.println(id_user);
 		
+		Urgence_patient urgence01 = new Urgence_patient();
+		urgence01.setDate_urgence(LaDateOji);
+		urgence01.setId_patient(1);
+		urgence01.setLat_patient(localisation_patient_latitude);
+		urgence01.setLong_patient(localisation_patient_longitude);
+		urgence01.setNom("D'Amatto");
+		urgence01.setPrenom_patient("Bernard");
+		urgence01.setTel_patient("065475236551");
+		this.urgenceDAO.save(urgence01); 
 		
 		
 
