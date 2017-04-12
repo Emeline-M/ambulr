@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Configuration du layout principal -->
+	<definition name="base.definition" template="/WEB-INF/views/jsp/structure.jsp">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+
+	<!-- Configuration de la vue "comme rcial" -->
+	<definition name="page_commercial" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="offres" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/commercial.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "accueil" -->
+	<definition name="page_accueil" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="accueil" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/pageaccueil.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "inscription" -->
+	<definition name="page_inscription" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="inscription" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/inscription.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "urgence" -->
+	<definition name="page-urgenceindex" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="urgence" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/pageurgenceindex.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "modifier le profil" -->
+	<definition name="page_inscription" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="modifier le profil" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/inscription.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "modifier le contact_us" -->
+	<definition name="page_contactus" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="nous-contacter" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/contact_us.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "modifier le module" -->
+	<definition name="page_module" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="modules" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/module.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "modifier le auteurs" -->
+	<definition name="page_nous" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="auteurs" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/nous.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "modifier le temoignage" -->
+	<definition name="page_temoignage" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="temoignage" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/temoignage.jsp" />
+	</definition>
+
+
+	<!-- Configuration de la vue "malaise" -->
+	<definition name="page_malaise" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="malaise" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/pagemalaise.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "urgencecorporelle -->
+	<definition name="page_urgence" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="urgence corporelle" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/pageurgences.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "faq" -->
+	<definition name="page_faq" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="FAQ" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/faq.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "Google" -->
+	<definition name="page_googleAPI" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="googleAPI" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/jsp/googlejsp_api.jsp" />
+	</definition>
+
+	<!-- Configuration de la vue "deconnexion" -->
+
+	<definition name="page_logout" extends="base.definition">
+
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+
+		<put-attribute name="title" value="logout" />
+
+		<put-attribute name="body" value="/WEB-INF/views/jsp/pagelogout.jsp" />
+	</definition>
+
+
+</tiles-definitions>

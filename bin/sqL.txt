@@ -1,0 +1,5 @@
+drop database ambulR;
+CREATE DATABASE ambulR;
+
+grant all privileges on ambulR.* TO'ambulRadmin'@'172.31.2.14' IDENTIFIED BY 'mdpambulR';
+flush privileges;
