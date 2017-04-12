@@ -1,9 +1,6 @@
 package fr.ambulR.model;
 
-import javax.persistence.Entity;
-
 import org.hibernate.validator.constraints.NotEmpty;
-import org.springframework.stereotype.Component;
  
 
 public class ConfirmPassword extends Patient{

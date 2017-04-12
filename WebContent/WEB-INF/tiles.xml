@@ -108,12 +108,17 @@
 	<!-- Configuration de la vue "deconnexion" -->
 
 	<definition name="page_logout" extends="base.definition">
-
 		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
-
 		<put-attribute name="title" value="logout" />
-
 		<put-attribute name="body" value="/WEB-INF/views/jsp/pagelogout.jsp" />
+	</definition>
+
+<!-- Configuration de la vue "validationInscription" -->
+
+	<definition name="page_validation" extends="base.definition">
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+		<put-attribute name="title" value="validation" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/validationInscription.jsp" />
 	</definition>
 
 

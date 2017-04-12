@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-offset-3  col-md-6">
-				<form:form action="inscription" method="post"
+				<form:form action="validation" method="post"
 					modelAttribute="utilisateur">
 
 					<div class="form-group">
@@ -33,17 +33,17 @@
 					<div class="form-group">
 
 						<form:label path="age">Age :</form:label>
-						<form:input class="form-control" type="date"
-							placeholder="Saisir l'age" path="age"></form:input>
+						<form:input type="date" placeholder="Saisir l'age" path="age"></form:input>
 						<form:errors path="age" />
 					</div>
-					
-					
-					<div class="form-group" >
 
-						<label>Choisir le sexe:</label> <select class="form-control" name="sexe" multiple>
+
+					<div class="form-group">
+
+						<label>Choisir le sexe:</label> <select class="form-control required" name="sexe">
 							<option value="H">Homme</option>
 							<option value="F">Femme</option>
+							<form:errors path="sexe" />
 						</select>
 					</div>
 
@@ -98,7 +98,7 @@
 
 					<div class="form-group">
 
-						<form:label path="DMP">Dossier Medical Personnel :</form:label>
+						<form:label path="DMP">Numéro d'identification de votre Dossier Medical Personnel :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="Saisir le code du DMP" path="DMP" />
 						<form:errors path="DMP" />
@@ -119,7 +119,7 @@
 					<div class="form-group">
 
 						<form:label path="password">Password :</form:label>
-						<form:input class="form-control" type="number"
+						<form:input class="form-control" type="text"
 							placeholder="Saisir le mot de pass:" path="password" />
 						<form:errors path="password" />
 
@@ -129,7 +129,7 @@
 					<div class="form-group">
 
 						<form:label path="password2">Confirmer le password :</form:label>
-						<form:input class="form-control" type="number"
+						<form:input class="form-control" type="text"
 							placeholder="Saisir de nouveau votre password" path="password2" />
 						<form:errors path="password2" />
 					</div>
@@ -137,7 +137,16 @@
 
 					<div class="form-group">
 
-						<form:label path="adresse_mail">Adresse mail :</form:label>
+						<form:label path="adresse_mail">identifiant :</form:label>
+						<form:input class="form-control" type="text"
+							placeholder="Entrez votre identifiant" path="identifiant" />
+						<form:errors path="identifiant" />
+					</div>
+					
+					
+					<div class="form-group">
+
+						<form:label path="adresse_mail">Adresse e-mail :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="Entrez votre adresse mail" path="adresse_mail" />
 						<form:errors path="adresse_mail" />
@@ -145,13 +154,12 @@
 
 					<div class="form-group">
 
-						<label>Choisir une formule:</label> 
-						<select name="abonnement" class="form-control"
-							multiple>
+						<label>Choisir une formule:</label> <select class="required" name="formule">
 							<option value="1">Abonnement 1 mois</option>
 							<option value="3">Abonnement 3 mois</option>
 							<option value="6">Abonnement 6 mois</option>
 							<option value="12">All inclusive 12 mois</option>
+							<form:errors path="formule" />
 						</select>
 					</div>
 

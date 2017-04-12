@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServlet;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -24,7 +23,7 @@ public class generatorcontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	
-    @Override
+   @Override
    public void init(ServletConfig config) throws ServletException {
       super.init(config);
       SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, config.getServletContext());
@@ -35,7 +34,7 @@ public class generatorcontroller extends HttpServlet {
 	
 	
 	@Autowired
-	private patientDAO patientDAO ;
+	private patientDAO patient2DAO ;
 	
 	@Autowired
 	private DroneDAO droneDAO;
@@ -66,7 +65,7 @@ public class generatorcontroller extends HttpServlet {
 		
 		System.out.println(testpatient); 
 		
-		testpatient = (Patient)this.patientDAO.save(testpatient); 
+		testpatient = (Patient)this.patient2DAO.save(testpatient); 
 		
 		
 	
