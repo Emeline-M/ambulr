@@ -1,0 +1,61 @@
+h1{
+    font-family: "Brush Script MT",cursive;
+    font-size: 200%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.titre{
+    text-align: center;
+}
+h2{
+    font-size: 300%;
+    margin-top: -60px;
+}
+.bandeausup{
+    background-color: coral;
+    height: 70px;
+}
+.accident{
+    margin-top: 10px;
+}
+#typeaccident{
+    border: solid black 1px;
+    width: 138px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:10px;
+    margin-top: 120px;
+    margin-left: 425px;
+}
+.choix{
+    height: 175px;
+}
+.choixaccident{
+    margin-left: 775px;
+    margin-top: -100px;
+}
+#valider{
+    font-size: 300%;
+    margin-left: 600px ;
+    margin-top: 75px;
+}
+input.accidents{
+    background-color: crimson;
+}
+.malaise{
+    background-color: cornflowerblue;
+}
+.etat{
+    border: solid black 1px;
+    width: 138px;
+    margin-left: 775px;
+    margin-top: -80px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.texte{
+margin-bottom: 10px;
+}

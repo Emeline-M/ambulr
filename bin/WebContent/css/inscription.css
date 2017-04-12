@@ -1,0 +1,63 @@
+#container {
+	margin-left: 100px;
+	margin-top: 100px;
+}
+
+#container10 {
+	list-style: none;
+	display: block;
+	flex-wrap: wrap;
+	border: black solid 1px;
+	justify-content: space-around;
+	/*background-image: url("/backgroundgris.png");*/
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+	width: 500px;
+	text-align: justify;
+	padding: 0;
+	margin: 0;
+}
+
+form {
+	/*background-image: url("/backgroundgris.png");*/
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
+
+.flex-container4 {
+	margin-top: 100px;
+	list-style: none;
+	display: flex;
+	ﬂex-wrap: nowrap;
+	justify-content: center;
+}
+
+.faischier {
+	/*background-image: url("/backgroundgris.png");*/
+	background: #cedce7; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #cedce7 0%, #596a72 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #cedce7 0%, #596a72 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7',
+		endColorstr='#596a72', GradientType=1);
+	/* IE6-9 fallback on horizontal gradient */
+}
