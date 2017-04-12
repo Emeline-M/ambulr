@@ -34,7 +34,7 @@ public class generatorcontroller extends HttpServlet {
 	
 	
 	@Autowired
-	private patientDAO patientDAO ;
+	private patientDAO patient2DAO ;
 	
 	@Autowired
 	private DroneDAO droneDAO;
@@ -65,7 +65,7 @@ public class generatorcontroller extends HttpServlet {
 		
 		System.out.println(testpatient); 
 		
-		testpatient = (Patient)this.patientDAO.save(testpatient); 
+		testpatient = (Patient)this.patient2DAO.save(testpatient); 
 		
 		
 	

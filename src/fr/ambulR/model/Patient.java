@@ -24,12 +24,11 @@ public class Patient extends Connexion {
     @Column (name="patient_prenom")
     private String prenom;
     
-    @Column (name="patient_DateDeNaissance")
-    @NotEmpty(message="rentrer votre date de Naissance")
-    private String dateDeNaissance;
+    @Column (name="patient_age")
+    @NotEmpty(message="rentrer votre age")
+    private String age;
     
     @Column (name="patient_sexe")
-    @NotEmpty(message="rentrer le sexe")
     private String sexe;
     
     @Column (name="patient_adresse")
@@ -65,7 +64,6 @@ public class Patient extends Connexion {
     private String numSecu;
     
     @Column (name="patient_formule")
-    @NotEmpty(message="Choisir votre formule")
     private String formule;
     
   
@@ -89,11 +87,11 @@ public class Patient extends Connexion {
     public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-    public String getDateDeNaissance() {
-        return dateDeNaissance;
+    public String getAge() {
+        return age;
     }
-    public void setAge(String dateDeNaissance) {
-        this.dateDeNaissance = dateDeNaissance;
+    public void setAge(String age) {
+        this.age = age;
     }
     public String getSexe() {
         return sexe;
@@ -150,7 +148,4 @@ public class Patient extends Connexion {
         this.adresse_mail = adresse_mail;
     }
 
-    
-
-    
 }
