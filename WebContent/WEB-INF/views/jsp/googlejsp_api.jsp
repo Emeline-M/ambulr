@@ -6,6 +6,7 @@
 
 
 <p></p>
+
 <div class="row">
 	<div class="col-xs-2 col-xs-offset-5">
 		<div class="btn-group" role="group" aria-label="...">
@@ -14,11 +15,14 @@
 	</div>
 </div>
 
-<!--  
-<button class="btn_googleAPI" onclick="getLocation()">Urgence</button>
--->
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<p id="DefinitionModule"></p>
+	</div>
+</div>
 
-<p id="DefinitionModule"></p>
+
+
 
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.7.2.min.js"></script>

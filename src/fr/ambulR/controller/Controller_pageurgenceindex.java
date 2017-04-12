@@ -14,13 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import fr.ambulR.model.Connexion;
+import fr.ambulR.model.Patient;
 
 @Controller
 public class Controller_pageurgenceindex {
 
 
 	@RequestMapping(value = "/accueilurgenceindex")
-	public String home2(@Valid @ModelAttribute("user") Connexion connexion, BindingResult result, Model model,
+	public String home2(@Valid @ModelAttribute("user") Patient connexion, BindingResult result, Model model,
 			HttpSession session) {
 		if (!result.hasErrors()) {
 	
@@ -29,6 +30,7 @@ public class Controller_pageurgenceindex {
 	
 				session.setAttribute("connexion", connexion);
 				session.setAttribute("username", connexion.getIdentifiant());
+				session.setAttribute("id_user", connexion.getConnexion_id());
 				return "page-urgenceindex";
 		
 		}
@@ -40,7 +42,7 @@ public class Controller_pageurgenceindex {
 	
 	
 	@RequestMapping(value = "/urgenceindex")
-	public String home(@Valid @ModelAttribute("user") Connexion connexion, BindingResult result, Model model,
+	public String home(@Valid @ModelAttribute("user") Patient connexion, BindingResult result, Model model,
 			 HttpServletRequest req) {
 	
 			System.out.println("connexion :" + connexion);
