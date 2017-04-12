@@ -10,8 +10,7 @@
 		<put-attribute name="body" value="" />
 	</definition>
 
-	<!-- Configuration de la vue "comme
-	rcial" -->
+	<!-- Configuration de la vue "comme rcial" -->
 	<definition name="page_commercial" extends="base.definition">
 		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
 		<put-attribute name="title" value="offres" />
@@ -90,15 +89,14 @@
 		<put-attribute name="body"
 			value="/WEB-INF/views/jsp/pageurgences.jsp" />
 	</definition>
-	
+
 	<!-- Configuration de la vue "faq" -->
 	<definition name="page_faq" extends="base.definition">
 		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
 		<put-attribute name="title" value="FAQ" />
-		<put-attribute name="body"
-			value="/WEB-INF/views/jsp/faq.jsp" />
+		<put-attribute name="body" value="/WEB-INF/views/jsp/faq.jsp" />
 	</definition>
-	
+
 	<!-- Configuration de la vue "Google" -->
 	<definition name="page_googleAPI" extends="base.definition">
 		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
@@ -106,15 +104,17 @@
 		<put-attribute name="body"
 			value="/WEB-INF/views/jsp/googlejsp_api.jsp" />
 	</definition>
-	
-	<!-- Configuration de la vue "profil" -->
-	<definition name="page_profil" extends="base.definition">
-		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
-		<put-attribute name="title" value="profil" />
-		<put-attribute name="body"
-			value="/WEB-INF/views/jsp/profil.jsp" />
-	</definition>
 
+	<!-- Configuration de la vue "deconnexion" -->
+
+	<definition name="page_logout" extends="base.definition">
+
+		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
+
+		<put-attribute name="title" value="logout" />
+
+		<put-attribute name="body" value="/WEB-INF/views/jsp/pagelogout.jsp" />
+	</definition>
 
 
 </tiles-definitions>

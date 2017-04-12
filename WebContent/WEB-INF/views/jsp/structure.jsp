@@ -7,21 +7,10 @@
 
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-
-<!-- CSS Files 
-<link rel="stylesheet" href="<c:url value="/css/main.css" />">
-<link rel="stylesheet" href="<c:url value="/css/inscription.css" />">
-<link rel="stylesheet" href="<c:url value="/css/pageaccueil.css" />">
-<link rel="stylesheet" href="<c:url value="/css/pagemalaise.css" />">
-<link rel="stylesheet"
-	href="<c:url value="/css/pageurgenceindex.css" />">
-<link rel="stylesheet" href="<c:url value="/css/pageurgences.css" />">  
-<link rel="stylesheet" href="<c:url value="/css/Suppl_temoignage.css" />"> -->
-
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="<c:url value="/css/style.css"/>"/>
 
 
 <title><tiles:insertAttribute name="title" /></title>
@@ -31,12 +20,20 @@
 <body>
 
 	<tiles:insertAttribute name="menu" />
-	<script src="js/jquery-3.2.0.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-	<tiles:insertAttribute name="body" />
+	<script src="<c:url value="/js/jquery.min.js"/>"></script>
+    <script src="<c:url value="/js/jquery.easing.min.js"/>"></script>
+    <script src="<c:url value="/js/bootstrap.min.js"/>"></script>
+    <script src="<c:url value="/js/custom.js"/>"></script>
+    <tiles:insertAttribute name="body" />
 
 	
 
+
+
+
 </body>
+
+
+
 
 </html>
