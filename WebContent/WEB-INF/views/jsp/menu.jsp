@@ -1,87 +1,96 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Ambul'R</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    
-    <ul class="nav navbar-nav">
-        <li class="nav navbar-nav"><a href="accueil">Home</a></li>
-        </ul>
-    
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil / inscription<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="inscription">Voir son profil</a></li>
-            <li><a href="profil">Modifier son profil</a></li>
-          </ul>
-        </li>
-        
-
-         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Informations <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="offres">Formules</a></li>
-            <li><a href="modules">Modules</a></li>
-            <li><a href="temoignages">Témoignages</a></li>
-            
-          </ul>
-        </li>
-         
-        <li class="nav navbar-nav"><a href="auteurs">Qui sommes nous?</a></li>
-        <li class="nav navbar-nav"><a href="contact">Nous contacter</a></li>
-        <li class="nav navbar-nav"><a href="urgenceindex">Urgences</a></li>
-  		<li class="nav navbar-nav"><a href="FAQ">FAQ</a></li>
-  		<li class="nav navbar-nav"><a href="API_google">GoogleAPI</a></li>        
-        
-            
-        
-        
-        
-        
-        
-      </ul>
-   
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-
-<!-- 
-
-<ul id="menu-bar">
-	<li><a href="accueil">Home</a></li>
-	<li><a href="#">Profil / inscription</a>
-		<ul>
-			<li><a href="inscription">Inscription</a></li>
-			<li><a href="profil">Modifier son profil</a></li>
-		</ul></li>
-	<li><a href="#">Informations</a> <!-- class="active"
-		<ul>
-			<li><a href="offres">Les formules</a></li>
-			<li><a href="modules">Les modules</a></li>
-			<li><a href="temoignage">Témoignages</a></li>
-		</ul></li>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
+	<!--banner-->
+	<section id="banner" class="banner">
+	<div class="bg-color">
 		
-	<li><a href="auteurs">Qui sommes nous?</a></li>
-	<li><a href="contact">Nous contacter</a></li>
-	<li><a href="urgenceindex">Urgences</a></li>
-	<li><a href="FAQ">FAQ</a></li>
-	<li><a href="API_google">GoogleAPI</a></li>
-	<li class="logo"><img src="/AmbulR/images/image.png" width="50px"
-		height="50px" align="right"></li>
-</ul> -->
+			
+		
+		<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="col-md-offset-2  col-md-10">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+					<!--  
+					<a class="navbar-brand" href="#">Ambul'R</a> <a
+						class="navbar-brand" href="#"><img src="images/image.png"
+						class="img-responsive" style="width: 140px; margin-top: -16px;"></a>
+				</div> -->
+
+
+					<!-- menu des pages -->
+
+					<div class="collapse navbar-collapse navbar-right">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="accueil">Home</a></li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Profil / inscription<span
+									class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="inscription">Voir son profil</a></li>
+									<li><a href="profil">Modifier son profil</a></li>
+								</ul></li>
+
+
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Informations <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="offres">Formules</a></li>
+									<li><a href="modules">Modules</a></li>
+									<li><a href="temoignages">Témoignages</a></li>
+								</ul></li>
+
+
+							<li class=""><a href="auteurs">Qui sommes nous?</a></li>
+							<li class=""><a href="contact">Nous contacter</a></li>
+							<li class=""><a href="urgenceindex">Urgences</a></li>
+							<li class=""><a href="FAQ">FAQ</a></li>
+							<li class=""><a href="API_google">GoogleAPI</a></li>
+							<li class=""><a href="pagelogout">Déconnexion</a></li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="banner-info">
+					<div class="banner-logo text-center">
+						<img src="images/image.png" class="img-responsive">
+					</div>
+					<div class="banner-text text-center">
+						<h1 class="white">Ambul'R</h1>
+						<p>Une seule minute peut être décisive pour sauver une vie...
+							N'attendez pas, faites le bon choix. Ambul'R. On respecte l'heure
+							d'or, on respecte votre vie !</p>
+						<a href="#contact" class="btn btn-appoint">Contactez nous!</a>
+					</div>
+					<div class="overlay-detail text-center">
+						<div class="the-icons">
+							<span class="glyphicon glyphicon-chevron-down"></span>
+						</div>
+					</div>
+				</div>
+	</section>
+
+
+
+	</div>
+
+</body>
+</html>

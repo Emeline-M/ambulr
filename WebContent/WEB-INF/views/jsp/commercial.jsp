@@ -1,57 +1,54 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    
-<p></p>
-
-<div class="cadre_commercial">
-    <ul class="flex-container_commercial">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABBONEMENT 1 MOIS *
-        190 € + PRIX DU DISPOSITIF CHOISI
-        
-        * reduction du 20% pour les personnes agées > 65 ans ou avec une maladie chronique
-        
-        <img src="http://www.keruve.com/css/keruve-2015.jpg">
-        <li class="flex-item_commercial">190 €</li>
-    </ul>
-</div>
+	pageEncoding="UTF-8"%>
 
 <p></p>
 
-<div class="cadre_commercial">
-    <ol class="flex-container_commercial">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABBONEMENT 3 MOIS *
-        450 € + PRIX DU DISPOSITIF CHOISI
-        
-        * reduction du 30% pour les personnes agées > 65 ans ou avec une maladie chronique
-        
-        <img src="http://www.keruve.com/css/keruve-2015.jpg">
-        <li class="flex-item_commercial">450 €</li>
-    </ol>
+
+<!--  @gray-lighter: lighten(#000, 93.5%);  -->
+
+
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<div class="container">
+			<h3>La montre connectée</h3>
+			<img src="images/montre_geoloc1 copy.jpg" class="img-rounded" alt="">
+			<button class="btn btn-success" type="submit">60 €</button>
+		</div>
+	</div>
 </div>
 
-<p></p>
 
-<div class="cadre_commercial">
-    <ol class="flex-container_commercial">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABBONEMENT 6 MOIS *
-        700 € + PRIX DU DISPOSITIF CHOISI
-        
-        * reduction du 50% pour les personnes agées > 65 ans ou avec une maladie chronique
-        <img src="http://www.keruve.com/css/keruve-2015.jpg">
-        <li class="flex-item_commercial">600 €</li>
-    </ol>
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<div class="container">
+			<h3>Le collier safety-life</h3>
+			<img src="images/collier_geoloc3.jpg" class="img-rounded" alt="">
+			<button class="btn btn-success" type="submit">45 €</button>
+		</div>
+	</div>
 </div>
 
-<p></p>
-<div class="cadre_commercial">
-    <ol class="flex-container_commercial">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ABBONEMENT 12 MOIS ALL INCLUSIVE *
-        1099 € + PRIX DU DISPOSITIF CHOISI
-        
-        * reduction du 60% pour les personnes agées > 65 ans ou avec une maladie chronique
-        <img src="http://www.keruve.com/css/keruve-2015.jpg">
-        <li class="flex-item_commercial">1099 €</li>
-    </ol>
+<div class="row">
+	<div class="col-xs-2 col-xs-offset-5">
+		<div class="container">
+			<h3>La montre connectée</h3>
+			<img src="images/PUCE_geoloc4.jpg" class="img-rounded" alt="">
+			<button class="btn btn-success" type="submit">90 €</button>
+		</div>
+	</div>
 </div>
 
-<!--  -->
+<div class="row">
+	<div class="col-xs-3">
+		<div class="container">
+			<h3>La montre connectée</h3>
+			<img src="images/tableau_forfaits.jpg" class="img-thumbnail" alt="">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
