@@ -25,11 +25,10 @@ public class Patient extends Connexion {
     private String prenom;
     
     @Column (name="patient_age")
-    @NotEmpty(message="rentrer l'age")
+    @NotEmpty(message="rentrer votre age")
     private String age;
     
     @Column (name="patient_sexe")
-    @NotEmpty(message="rentrer le sexe")
     private String sexe;
     
     @Column (name="patient_adresse")
@@ -65,7 +64,6 @@ public class Patient extends Connexion {
     private String numSecu;
     
     @Column (name="patient_formule")
-    @NotEmpty(message="Choisir votre formule")
     private String formule;
     
   
@@ -150,7 +148,4 @@ public class Patient extends Connexion {
         this.adresse_mail = adresse_mail;
     }
 
-    
-
-    
 }

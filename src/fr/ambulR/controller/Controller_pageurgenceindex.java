@@ -8,10 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
-import javax.xml.ws.spi.http.HttpContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -21,12 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import fr.ambulR.dao.UrgenceDAO;
-import fr.ambulR.dao.patientDAO;
-import fr.ambulR.model.ConfirmPassword;
 import fr.ambulR.model.Connexion;
-import fr.ambulR.model.Patient;
 import fr.ambulR.model.Urgence_patient;
-import fr.ambulR.validator.PatientValidator;
 
 @RestController
 public class Controller_pageurgenceindex extends HttpServlet {
