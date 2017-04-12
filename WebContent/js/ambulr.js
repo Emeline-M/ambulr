@@ -1,4 +1,4 @@
-var modifAFaire = document.getElementById("DefinitionModule");
+let modifAFaire = document.getElementById("DefinitionModule");
 
 
 
@@ -8,18 +8,44 @@ var modifAFaire = document.getElementById("DefinitionModule");
 // Fonction ------------------------------------*/
 /*----------------------------------------------*/
 
+function start(){
+	// coordonée de l'hopital
+	let Lat_hospital = 43.535518;
+	let long_hospital = 5.441927;
+	coordonneeGPS();
+	document.getElementById('laDateOji').value = ObtenirDate();
+	//console.log("test");
+}
+
+
+
 function getLocation() {
 	if (navigator.geolocation) {
-		navigator.geolocation.getCurrentPosition(showPosition);
+		//navigator.geolocation.getCurrentPosition(showPosition);
 		navigator.geolocation.getCurrentPosition(DefinitionDuTrajetEnFctDesModules);
+		date_de_l_urgence=ObtenirDate();
 	} else {
 		modifAFaire.innerHTML = "Geolocation is not supported by this browser.";
 	}
 }
 
+
+function coordonneeGPS() {
+	navigator.geolocation.getCurrentPosition(showPosition);
+	//console.log("test");
+}
+
+	
+
 function showPosition(position) {
-	modifAFaire.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: "
-			+ position.coords.longitude;
+	/*modifAFaire.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: "
+			+ position.coords.longitude;*/
+	//document.getElementById('localisation_patient').value = "test";
+	$("#localisation_patient_lat").val(position.coords.latitude);
+	$("#localisation_patient_long").val(position.coords.longitude);
+	//console.log(position.coords.latitude);
+	$("form").submit();
+	
 }
 
 
@@ -65,6 +91,7 @@ function DefinitionDuTrajetEnFctDesModules(coordonneePatient){
 	let index = lycos(minimum,distanceAParcourir);
 	
 	// ecriture des coordonnées GPS des 3 voitures
+	/*
 	modifAFaire.innerHTML += '<p></p>';
 	modifAFaire.innerHTML += "Latitude M1 : " + M1[0] + "<br>"
 			+ "Longitude M1 : " + M1[1] + "<br>" + "Distance M1 à parcourir : " + trajet_total_M1;
@@ -76,6 +103,10 @@ function DefinitionDuTrajetEnFctDesModules(coordonneePatient){
 			+ "Longitude M3 : " + M3[1] + "<br>" + "Distance M3 à parcourir : " + trajet_total_M3;
 	modifAFaire.innerHTML += '<p></p>';
 	modifAFaire.innerHTML += "Module le plus rapide : " + nomDesModules[index];
+	*/
+	let M1_texte = "Latitude M1 : " + M1[0] + " " + "Longitude M1 : " + M1[1] + " " + "Distance M1 à parcourir : " + trajet_total_M1;
+	console.log(M1_texte);
+	console.log(nomDesModules[index]);
 	
 }
 
@@ -157,9 +188,14 @@ function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
 	}
 	
 	
+	function ObtenirDate(){
+		let d = new Date();
+		let dateOfThisDay = new Date(d.getFullYear(),(d.getMonth()+1),d.getDate(),d.getHours(),d.getMinutes(),d.getSeconds());
+		console.log(dateOfThisDay);
+		return dateOfThisDay;
+	}
 	
-	let d = new Date();
-	let n = d.getTime();
+	
 	
 /*----------------------------------------------*/
 // Test API ------------------------------------*/

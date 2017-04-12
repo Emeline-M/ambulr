@@ -10,10 +10,18 @@
 <div class="row">
 	<div class="col-xs-2 col-xs-offset-5">
 		<div class="btn-group" role="group" aria-label="...">
-			<button type="button" class="btn btn-danger" onclick="getLocation()">Urgence</button>
+			<button type="button" class="btn btn-danger" onclick="a=getLocation()">Urgence</button>
 		</div>
 	</div>
+	
+	
 </div>
+
+
+
+
+
+
 
 <div class="row">
 	<div class="col-xs-2 col-xs-offset-5">
