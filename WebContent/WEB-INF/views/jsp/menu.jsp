@@ -1,9 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar"
@@ -51,7 +50,7 @@
 								<ul class="dropdown-menu">
 									<li><a href="offres">Formules</a></li>
 									<li><a href="modules">Modules</a></li>
-									<li><a href="temoignages">Témoignages</a></li>
+									<li><a href="temoignages">TÃ©moignages</a></li>
 								</ul></li>
 
 
@@ -60,7 +59,7 @@
 							<li class=""><a href="urgenceindex">Urgences</a></li>
 							<li class=""><a href="FAQ">FAQ</a></li>
 							<li class=""><a href="API_google">GoogleAPI</a></li>
-							<li class=""><a href="pagelogout">Déconnexion</a></li>
+							<li class=""><a href="pagelogout">DÃ©connexion</a></li>
 
 						</ul>
 					</div>
@@ -75,7 +74,7 @@
 					</div>
 					<div class="banner-text text-center">
 						<h1 class="white">Ambul'R</h1>
-						<p>Une seule minute peut être décisive pour sauver une vie...
+						<p>Une seule minute peut Ãªtre dÃ©cisive pour sauver une vie...
 							N'attendez pas, faites le bon choix. Ambul'R. On respecte l'heure
 							d'or, on respecte votre vie !</p>
 						<a href="#contact" class="btn btn-appoint">Contactez nous!</a>
