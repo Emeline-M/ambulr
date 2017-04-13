@@ -120,7 +120,7 @@
 
 						<form:label path="password">Password :</form:label>
 						<form:input class="form-control" type="text"
-							placeholder="Saisir le mot de pass:" path="password" />
+							placeholder="Saisir le mot de passe:" path="password" />
 						<form:errors path="password" />
 
 					</div>
@@ -130,14 +130,14 @@
 
 						<form:label path="password2">Confirmer le password :</form:label>
 						<form:input class="form-control" type="text"
-							placeholder="Saisir de nouveau votre password" path="password2" />
+							placeholder="Saisir de nouveau votre mot de passe" path="password2" />
 						<form:errors path="password2" />
 					</div>
 
 
 					<div class="form-group">
 
-						<form:label path="adresse_mail">identifiant :</form:label>
+						<form:label path="identifiant">identifiant :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="Entrez votre identifiant" path="identifiant" />
 						<form:errors path="identifiant" />
@@ -148,7 +148,7 @@
 
 						<form:label path="adresse_mail">Adresse e-mail :</form:label>
 						<form:input class="form-control" type="text"
-							placeholder="Entrez votre adresse mail" path="adresse_mail" />
+							placeholder="Entrez votre adresse e-mail" path="adresse_mail" />
 						<form:errors path="adresse_mail" />
 					</div>
 
