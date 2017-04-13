@@ -88,6 +88,8 @@ public class Controller_pageurgenceindex extends HttpServlet {
 																	// FONCTIONNE
 																	// PAS
 																	// ENCORE !
+		
+		//Urgence_patient findByLogin(String username, String password)
 
 		double localisation_patient_latitude = Double.parseDouble(localisation_patient_lat);
 		double localisation_patient_longitude = Double.parseDouble(localisation_patient_long);
@@ -103,7 +105,7 @@ public class Controller_pageurgenceindex extends HttpServlet {
 		urgence01.setId_patient(1);
 		urgence01.setLat_patient(localisation_patient_latitude);
 		urgence01.setLong_patient(localisation_patient_longitude);
-		urgence01.setNom("D'Amatto");
+		urgence01.setNom("Menneré");
 		urgence01.setPrenom_patient("Bernard");
 		urgence01.setTel_patient("065475236551");
 		this.urgenceDAO.save(urgence01); 

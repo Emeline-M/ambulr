@@ -12,6 +12,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import fr.ambulR.model.Drone;
+import fr.ambulR.model.Urgence_patient;
 
 @Repository
 @Transactional
@@ -47,6 +48,12 @@ public class DroneDAO extends DAO<Drone>{
 			return false;
 		}
 	}
+	
+	@Override
+    public Drone findByLogin(String username, String password) {
+        return this.em.createQuery("FROM Drone where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Drone.class)
+                .getSingleResult();
+    }
 
 	
 
