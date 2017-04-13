@@ -18,7 +18,7 @@
 		</div>
 		<form:form method="post" id="connexion" action="accueilurgenceindex"
 			modelAttribute="user">
-			<p>Connection</p>
+			<p>Connexion</p>
 			<table>
 				<tr>
 					<td><form:label path="identifiant">Identifiant</form:label></td>

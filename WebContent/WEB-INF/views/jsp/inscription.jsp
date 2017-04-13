@@ -7,8 +7,10 @@
 <body>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-offset-3  col-md-6">
+		<div class="col-md-offset-3  col-md-6">
+				<div class="contact-info">
+					<h3 class="cnt-ttl">Inscription</h3>
+					<div class="space"></div>
 				<form:form action="validation" method="post"
 					modelAttribute="utilisateur">
 
@@ -166,8 +168,11 @@
 					<div class="pull-right">
 						<input class="btn btn-primary" type="submit" value="Valider" />
 					</div>
+					
 				</form:form>
+				
 			</div>
 		</div>
 	</div>
+	
 </body>

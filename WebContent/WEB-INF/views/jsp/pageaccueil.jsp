@@ -1,51 +1,54 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-	<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-	
 
-	
-	<div class="titre">
-		<h1>Ambul'R</h1>
-	</div>
-	<div>
-		<p2>Une seule minute peut-être décisive pour sauver une vie..
-		N'attendez pas, faites le bon choix. Ambul'R.. On respecte l'heure
-		d'or, on respecte votre vie.</p2>
-	</div>
-	<ul class="ﬂex-container">
-		<div class="sscont">
-			<img src="projetub.gif">
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-3  col-md-6">
+			<h3 class="ser-title">Connexion</h3>
+
+
+			<form:form method="post" id="connexion" action="accueilurgenceindex"
+				modelAttribute="user">
+
+				<div class="form-group">
+
+					<form:label path="identifiant">Identifiant</form:label>
+					<form:input path="identifiant" class="form-control" type="text"
+						placeholder="Saisir votre identifiant" />
+					<form:errors path="identifiant" />
+
+				</div>
+
+				<div class="form-group">
+
+					<form:label path="password">Password</form:label>
+					<form:input path="password" class="form-control" type="text"
+						placeholder="Saisir votre mot de passe" />
+					<form:errors path="password" />
+				</div>
+
+
+				<div class="pull-right">
+					<input class="btn btn-primary" type="submit" value="Valider" />
+				</div>
+
+			</form:form>
+			<div class="space"></div>
+			<h4 class="ser-title">Pas encore membre?</h4>
+			<div class=inscription>
+				<form id="connexion" action="inscription" method="get">
+					<input type="submit" value="Inscription"
+						class="btn btn-default btn-lg active">
+				</form>
+			</div>
+
+
 		</div>
-		<form:form method="post" id="connexion" action="accueilurgenceindex"
-			modelAttribute="user">
-			<p>Connexion</p>
-			<table>
-				<tr>
-					<td><form:label path="identifiant">Identifiant</form:label></td>
-					<td><form:input path="identifiant" /></td>
-					<td><form:errors path="identifiant" /></td>
-				</tr>
-
-				<tr>
-					<td><form:label path="password">Password</form:label></td>
-					<td><form:password path="password" /></td>
-					<td><form:errors path="password" /></td>
-				</tr>
-				<tr>
-<td colspan="2"><input type="submit" value="Valider" /></td>
-</tr>
-			</table>
-			
-		</form:form>
-		<div class="bordure"></div>
-		<p>Pas encore membre?</p>
-		<div class=inscription>
-			<form id="connexion" action="inscription" method="get">
-				<input type="submit" value="Inscription">
-		</div>
+	</div>
+</div>
 
 
-		</form>
-
-	</ul>
 
