@@ -2,18 +2,21 @@
 	pageEncoding="ISO-8859-1"%>
 
 
+<p></p>
 
 
-<form  method= "POST" action="urgenceindex">
+<form method="POST" action="urgenceindex">
 
-	<input type="hidden" id="localisation_patient_lat" name="localisation_patient_lat" value="" />
-	<input type="hidden" id="localisation_patient_long" name="localisation_patient_long" value="" />
-	<input type="hidden" id="laDateOji" name="laDateOji" value="" />
+	<input type="hidden" id="localisation_patient_lat"
+		name="localisation_patient_lat" value="" /> <input type="hidden"
+		id="localisation_patient_long" name="localisation_patient_long"
+		value="" /> <input type="hidden" id="laDateOji" name="laDateOji"
+		value="" />
 
-	<div class="pull-right">
+	<div class="col-sm-2 col-sm-offset-5 ">
 		<input class="btn btn-danger" type="button" value="Appel urgence"
 			onclick="start()" />
-	</div> 
+	</div>
 
 </form>
 

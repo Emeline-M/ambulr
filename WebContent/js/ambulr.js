@@ -14,7 +14,7 @@ function start(){
 	let long_hospital = 5.441927;
 	coordonneeGPS();
 	document.getElementById('laDateOji').value = ObtenirDate();
-	//console.log("test");
+	//$("#localisation_module_M1").val(position.coords.longitude);
 }
 
 

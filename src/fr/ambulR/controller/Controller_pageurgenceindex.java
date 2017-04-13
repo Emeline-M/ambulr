@@ -10,6 +10,7 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -22,7 +23,7 @@ import fr.ambulR.dao.UrgenceDAO;
 import fr.ambulR.model.Connexion;
 import fr.ambulR.model.Urgence_patient;
 
-@RestController
+@Controller
 public class Controller_pageurgenceindex extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -87,21 +88,24 @@ public class Controller_pageurgenceindex extends HttpServlet {
 																	// FONCTIONNE
 																	// PAS
 																	// ENCORE !
+		
+		//Urgence_patient findByLogin(String username, String password)
 
 		double localisation_patient_latitude = Double.parseDouble(localisation_patient_lat);
 		double localisation_patient_longitude = Double.parseDouble(localisation_patient_long);
 		
+		/*
 		System.out
 				.println("Latitude : " + localisation_patient_latitude + "\n" + "Longitude : " + localisation_patient_longitude);
 		System.out.println(LaDateOji);
-		System.out.println(id_user);
+		System.out.println(id_user);*/
 		
 		Urgence_patient urgence01 = new Urgence_patient();
 		urgence01.setDate_urgence(LaDateOji);
 		urgence01.setId_patient(1);
 		urgence01.setLat_patient(localisation_patient_latitude);
 		urgence01.setLong_patient(localisation_patient_longitude);
-		urgence01.setNom("D'Amatto");
+		urgence01.setNom("Menneré");
 		urgence01.setPrenom_patient("Bernard");
 		urgence01.setTel_patient("065475236551");
 		this.urgenceDAO.save(urgence01); 
