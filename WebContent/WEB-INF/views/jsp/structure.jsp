@@ -17,7 +17,8 @@
 
 </head>
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
 
 	<tiles:insertAttribute name="menu" />
 	<script src="<c:url value="/js/jquery.min.js"/>"></script>
