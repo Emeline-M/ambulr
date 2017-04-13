@@ -26,7 +26,6 @@ import fr.ambulR.validator.PatientValidator;
 			public String inscriptionsession(@Valid @ModelAttribute("utilisateur") ConfirmPassword confirmPassword, Patient inscrit2, BindingResult result, Model model,
 					HttpSession sessionutilisateur) {
 				model.addAttribute("utilisateur", new ConfirmPassword());
-				System.out.println("coucouvalidation");
 				new PatientValidator().validate(confirmPassword, result);
 				
 				if (!result.hasErrors()) {
@@ -34,7 +33,7 @@ import fr.ambulR.validator.PatientValidator;
 					
 					System.out.println("sessionutilisateur :" + sessionutilisateur);
 			
-			
+					
 					sessionutilisateur.setAttribute("Patient", inscrit2);
 					sessionutilisateur.setAttribute("nom", inscrit2.getNom());
 					sessionutilisateur.setAttribute("prenom", inscrit2.getPrenom());
@@ -50,7 +49,9 @@ import fr.ambulR.validator.PatientValidator;
 					sessionutilisateur.setAttribute("identifiant", inscrit2.getIdentifiant());
 					sessionutilisateur.setAttribute("password", inscrit2.getPassword());
 					sessionutilisateur.setAttribute("formule", inscrit2.getFormule());
+					sessionutilisateur.setAttribute("adresse_mail", inscrit2.getAdresse_mail());
 
+					
 					System.out.println("Patient :" + inscrit2);
 					
 					inscrit2 = (Patient)this.patient1DAO.save(inscrit2);
