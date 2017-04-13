@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,9 +12,9 @@
 	<!--banner-->
 	<section id="banner" class="banner">
 	<div class="bg-color">
-		
-			
-		
+
+
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="col-md-offset-3  col-md-9">
@@ -22,21 +24,30 @@
 						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
 							class="icon-bar"></span>
 					</button>
-				
+
 
 					<!-- menu des pages -->
 
 					<div class="collapse navbar-collapse navbar-right">
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="accueil">Home</a></li>
-							<li class="dropdown"><a href="#" class="dropdown-toggle"
-								data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil / inscription<span
-									class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a href="inscription">S'inscrire</a></li>
-									<li><a href="profil">Modifier son profil</a></li>
-								</ul></li>
+							<!-- si connecté affiche Profil et Modifier son Profil -->
+							<c:if test="${!(username==null)}">
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">Profil<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="validation">Modifier son profil</a></li>
+							</c:if>
+							<c:if test="${username==null}">
+								<li class="dropdown"><a href="#" class="dropdown-toggle"
+									data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">Inscription<span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="inscription">S'inscrire</a></li>
+							</c:if>
+
+
 
 
 							<li class="dropdown"><a href="#" class="dropdown-toggle"

@@ -197,6 +197,7 @@ services
 }
 .icon-info p{
 	font-size: 15px !important;
+	text-align: justify;
 }
 /***************************************
 cta-1
@@ -274,10 +275,11 @@ about
 /***************************************
 doctor team
 ***************************************/
-.thumbnail {
+.thumbnail  {
 	border-radius: 0px;
 	
-}
+	
+	}
 .caption h3{
     padding-bottom: 5px;
 }
