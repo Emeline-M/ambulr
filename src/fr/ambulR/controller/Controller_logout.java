@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class Controller_logout {
 
-	@RequestMapping("/logout")
+	@RequestMapping("/pagelogout")
 	public String logout(HttpSession session) {
 		
 		System.out.println("session :"+session);

@@ -41,6 +41,8 @@ public class Controller_pageurgenceindex extends HttpServlet {
 	@RequestMapping(value = "/accueilurgenceindex")
 	public String home2(@Valid @ModelAttribute("user") Connexion connexion, BindingResult result, Model model,
 			HttpSession session) {
+		System.out.println("home2");
+		
 		if (!result.hasErrors()) {
 
 			System.out.println("connexion :" + connexion);
@@ -61,6 +63,7 @@ public class Controller_pageurgenceindex extends HttpServlet {
 			HttpServletRequest req) {
 
 		System.out.println("connexion :" + connexion);
+		System.out.println("home");
 
 		if (req.getSession().getAttribute("username") != null) {
 
