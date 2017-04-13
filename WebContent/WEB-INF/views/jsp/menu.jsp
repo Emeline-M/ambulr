@@ -3,12 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<title>Insert title here</title>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar"
-	data-offset="60">
+
+
 	<!--banner-->
 	<section id="banner" class="banner">
 	<div class="bg-color">
@@ -32,6 +28,7 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="accueil">Home</a></li>
 							<!-- si connecté affiche Profil et Modifier son Profil -->
+							
 							<c:if test="${!(username==null)}">
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -95,6 +92,3 @@
 
 
 
-
-</body>
-</html>
