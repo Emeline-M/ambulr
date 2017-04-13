@@ -14,9 +14,6 @@
 					modelAttribute="utilisateur">
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var nom = <?php echo $sessionutilisateur["nom"]; ?>;
-						</script>
 						<form:label path="nom">Nom :</form:label>
 						<form:input class="form-control" path="nom" type="text"
 							placeholder="${nom}" />
@@ -25,9 +22,6 @@
 					</div>
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var prenom = <?php echo $sessionutilisateur["prenom"]; ?>;
-						</script>
 						<form:label path="prenom">Prénom :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${prenom}" path="prenom" />
@@ -36,35 +30,22 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var age = <?php echo $sessionutilisateur["age"]; ?>;
-						</script>
-						<form:label path="age">Age :</form:label>
-						<form:input type="date" placeholder="${age}" path="age"></form:input>
+						<form:label path="age"> Age :</form:label>
+						<form:input type="date" path="age" value="${age}" ></form:input>
 						<form:errors path="age" />
-					</div> 
+					</div>
+
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var sexe = <?php echo $sessionutilisateur["sexe"]; ?>;	
-							<input type=\"hidden\" name=\"item_number\" value=$sessionutilisateur["sexe"] >
-						</script>
 						<label>Choisir le sexe:</label> <select
-							class="form-control required" name="sexe" onChange="${sexe}">
-							<option value="H">Homme</option>
-							<option value="F">Femme</option>
+							class="form-control required" name="sexe">
+								<option value="H" <c:if test="${sexe == 'H'}">selected="selected"</c:if>>Homme</option>
+								<option value="F" <c:if test="${sexe == 'F'}">selected="selected"</c:if>>Femme</option> 
 							<form:errors path="sexe" />
-						
 						</select>
 					</div>
 					
-					<
-
-
 					<div class="form-group">
-						<script type="text/javascript">
-							var adresse = <?php echo $sessionutilisateur["adresse"]; ?>;
-						</script>
 						<form:label path="adresse">Adresse :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${adresse}" path="adresse" />
@@ -74,9 +55,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var tel = <?php echo $sessionutilisateur["tel"]; ?>;
-						</script>
 						<form:label path="tel">Numéro de telephone : </form:label>
 						<form:input class="form-control" type="number"
 							placeholder="${tel}" path="tel" />
@@ -85,9 +63,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var nomU = <?php echo $sessionutilisateur["nomU"]; ?>;
-						</script>
 						<form:label path="nomU">Nom du contact d'urgence :</form:label>
 						<form:input class="form-control" path="nomU" type="text"
 							placeholder="${nomU}" />
@@ -96,10 +71,6 @@
 					</div>
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var prenomU = <?php echo $sessionutilisateur["prenomU"]; ?>;
-						</script>
-
 						<form:label path="prenomU">Prénom du contact d'urgence :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${prenomU}" path="prenomU" />
@@ -108,9 +79,6 @@
 					</div>
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var telU = <?php echo $sessionutilisateur["telU"]; ?>;
-						</script>
 						<form:label path="telU">Numéro de telephone du contact d'urgence : </form:label>
 						<form:input class="form-control" type="number"
 							placeholder="${telU}" path="telU" />
@@ -120,9 +88,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var DMP = <?php echo $sessionutilisateur["DMP"]; ?>;
-						</script>
 						<form:label path="DMP">Numéro d'identification de votre Dossier Medical Personnel :</form:label>
 						<form:input class="form-control" type="text" placeholder="${DMP}"
 							path="DMP" />
@@ -131,21 +96,15 @@
 					</div>
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var numSecu = <?php echo $sessionutilisateur["numSecu"]; ?>;
-						</script>
 						<form:label path="numSecu">Numéro de Sécurité Sociale :</form:label>
 						<form:input class="form-control" type="number"
-							placeholder="${numSecu}" path="numSecu" />
+							placeholder="${NumSecu}" path="numSecu" />
 						<form:errors path="numSecu" />
 
 					</div>
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var password = <?php echo $sessionutilisateur["password"]; ?>;
-						</script>
 						<form:label path="password">Password :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${password}" path="password" />
@@ -155,9 +114,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var password2 = <?php echo $sessionutilisateur["password2"]; ?>;
-						</script>
 						<form:label path="password2">Confirmer le password :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${password2}" path="password2" />
@@ -166,9 +122,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var identifiant = <?php echo $sessionutilisateur["identifiant"]; ?>;
-						</script>
 						<form:label path="identifiant">identifiant :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${identifiant}" path="identifiant" />
@@ -177,9 +130,6 @@
 
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var adresse_mail = <?php echo $sessionutilisateur["adresse_mail"]; ?>;
-						</script>
 						<form:label path="adresse_mail">Adresse e-mail :</form:label>
 						<form:input class="form-control" type="text"
 							placeholder="${adresse_mail}" path="adresse_mail" />
@@ -187,15 +137,12 @@
 					</div>
 
 					<div class="form-group">
-						<script type="text/javascript">
-							var formule = <?php echo $sessionutilisateur["formule"]; ?>;
-						</script>
 						<label>Choisir une formule:</label> <select class="required"
 							name="formule">
-							<option value="1">Abonnement 1 mois</option>
-							<option value="3">Abonnement 3 mois</option>
-							<option value="6">Abonnement 6 mois</option>
-							<option value="12">All inclusive 12 mois</option>
+							<option value="1" <c:if test="${formule == '1'}">selected="selected"</c:if>>Abonnement 1 mois</option>
+							<option value="3" <c:if test="${formule == '3'}">selected="selected"</c:if>>Abonnement 3 mois</option> 
+							<option value="6" <c:if test="${formule == '6'}">selected="selected"</c:if>>Abonnement 6 mois</option>
+							<option value="12" <c:if test="${formule == '12'}">selected="selected"</c:if>>Abonnement 12 mois</option> 
 							<form:errors path="formule" />
 						</select>
 					</div>
