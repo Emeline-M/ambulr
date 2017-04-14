@@ -5,7 +5,6 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
 
-
 <div class="container">
 	<div class="col-md-offset-3  col-md-6">
 		<div class="contact-info">
@@ -177,6 +176,8 @@
 			</form:form>
 
 		</div>
+
 	</div>
 </div>
+
 
