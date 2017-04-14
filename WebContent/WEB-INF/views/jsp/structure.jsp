@@ -5,7 +5,7 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
 
-<html>
+
 <head>
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -37,4 +37,3 @@
 
 
 
-</html>

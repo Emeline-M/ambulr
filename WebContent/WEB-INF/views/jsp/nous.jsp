@@ -10,7 +10,7 @@
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6">
 			      <div style="text-align: center"> 
-			      	<img src="https://www.aquaportail.com/aquabdd/photos/agalychnis-callidryas.jpg" alt="..." class="img-circle" width="80%">
+			      	<img src="images/Emeline.jpeg" alt="..." class="img-circle" width="80%">
 			        <div class="caption">
 			          <h3>Emeline</h3>
 			          <p>Jeune, serieuse et ravie de faire part de ce projet. Pour elle Ambul'R est symbole d'une équipe, derrière un ordinateur, avec une grande envie d'apprendre...</p>
@@ -31,10 +31,10 @@
 			    </div>
 			    <div class="col-md-3 col-sm-3 col-xs-6">
 			      <div style="text-align: center"> 
-			      	<img src="images/denis.jpg" alt="..." class="img-circle" width="80%" >
+			      	<img src="images/denis.jpeg" alt="..." class="img-circle" width="80%" >
 			        <div class="caption" >
 			          <h3>Denis</h3>
-			          <p>La puissance du progrès, le pouvoir de l'intelligence humaine et artificielle, l'envie de dépasser les limites du possible ... et l'importance d'aider les malades. Ceci est Ambul'R pour Denis</p>
+			          <p>La puissance du progrès, le pouvoir de l'intelligence humaine et artificielle, l'envie de dépasser les limites du possible ... et l'importance d'aider les malades. Ceci est Ambul'R pour Denis.</p>
 			          
 			        </div>
 			      </div>
