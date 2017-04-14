@@ -10,7 +10,6 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import fr.ambulR.model.Drone;
 import fr.ambulR.model.Patient;
 
 @Repository

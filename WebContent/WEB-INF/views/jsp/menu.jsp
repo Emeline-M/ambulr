@@ -57,9 +57,20 @@
 
 
 								<li class=""><a href="auteurs">Qui sommes nous?</a></li>
-								<li class=""><a href="urgenceindex">Urgences</a></li>
-								<li class=""><a href="FAQ">FAQ</a></li>
-								<li class=""><a href="pagelogout">Déconnexion</a></li>
+								<c:if test="${!(username==null)}">
+									<li class=""><a href="urgenceindex">Urgences</a></li>
+								</c:if>
+								<c:if test="${!(username==null)}">
+									<li class=""><a href="pagelogout">Déconnexion</a></li>
+								</c:if>
+								<c:if test="${(username==null)}">
+								<li role="separator" class="divider"></li>
+									<li class=""><a href="FAQ">FAQ</a></li>
+									
+								</c:if>
+								<c:if test="${!(username==null)}">
+									<li class=""><a href="FAQ">FAQ</a></li>
+								</c:if>
 
 							</ul>
 						</div>
@@ -67,19 +78,19 @@
 				</div>
 			</div>
 		</nav>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="banner-info">
-				<div class="banner-logo text-center">
-					<img src="images/image.png" class="img-responsive">
-				</div>
-				<div class="banner-text text-center">
-					<h1 class="white">Ambul'R</h1>
-					<p>Une seule minute peut être décisive pour sauver une vie...
-						N'attendez pas, faites le bon choix. Ambul'R. On respecte l'heure
-						d'or, on respecte votre vie !</p>
-					<a href="contact" class="btn btn-appoint">Contactez nous!</a>
+		<div class="container">
+			<div class="row">
+				<div class="banner-info">
+					<div class="banner-logo text-center">
+						<img src="images/image.png" class="img-responsive">
+					</div>
+					<div class="banner-text text-center">
+						<h1 class="white">Ambul'R</h1>
+						<p>Une seule minute peut être décisive pour sauver une vie...
+							N'attendez pas, faites le bon choix. Ambul'R. On respecte l'heure
+							d'or, on respecte votre vie !</p>
+						<a href="contact" class="btn btn-appoint">Contactez nous!</a>
+					</div>
 				</div>
 			</div>
 		</div>

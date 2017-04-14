@@ -166,7 +166,7 @@
 					</select>
 				</div>
 
-				<div class="pull-right">
+				<div class="pull-right" style="padding-bottom:30px;">
 					<input class="btn btn-primary" type="submit" value="Valider" />
 				</div>
 
