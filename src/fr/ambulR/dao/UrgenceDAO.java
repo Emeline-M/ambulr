@@ -48,9 +48,9 @@ public class UrgenceDAO extends DAO<Urgence_patient>{
 	
 	
 	@Override
-    public Urgence_patient findByLogin(String username, String password) {
+    public List<Urgence_patient> findByLogin(String username, String password) {
         return this.em.createQuery("FROM Urgence_patient where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Urgence_patient.class)
-                .getSingleResult();
+                .getResultList();
     }
 
 }

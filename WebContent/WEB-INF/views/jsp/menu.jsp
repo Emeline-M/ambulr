@@ -33,7 +33,7 @@
 										<li><a href="profil">Modifier son profil</a></li>
 									</ul></li>
 
-
+								
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-haspopup="true"
 									aria-expanded="false">Informations <span class="caret"></span></a>

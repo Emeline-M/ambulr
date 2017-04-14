@@ -6,6 +6,8 @@ import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Repository;
 
+import fr.ambulR.model.Drone;
+
 
 public abstract class DAO<T> {
 
@@ -20,6 +22,6 @@ public abstract class DAO<T> {
 		public abstract List<T> findAll();
 		public abstract T save(T object);
 		public abstract boolean delete(T object);
-		public abstract T findByLogin(String username, String password);
+		public abstract List<T> findByLogin(String username, String password);
 
 }

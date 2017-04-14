@@ -50,9 +50,9 @@ public class patientDAO extends DAO<Patient> {
 	}
 	
 	@Override
-    public Patient findByLogin(String username, String password) {
+    public List<Patient> findByLogin(String username, String password) {
         return this.em.createQuery("FROM Patient where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Patient.class)
-                .getSingleResult();
+                .getResultList();
     }
 
 }

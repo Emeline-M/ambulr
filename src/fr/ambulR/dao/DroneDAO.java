@@ -49,10 +49,11 @@ public class DroneDAO extends DAO<Drone>{
 		}
 	}
 	
+	
 	@Override
-    public Drone findByLogin(String username, String password) {
+    public List<Drone> findByLogin(String username, String password) {
         return this.em.createQuery("FROM Drone where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Drone.class)
-                .getSingleResult();
+                .getResultList();
     }
 
 	
