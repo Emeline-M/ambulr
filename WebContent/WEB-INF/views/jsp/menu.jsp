@@ -38,14 +38,14 @@
 									aria-expanded="false">Profil<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="validation">Modifier son profil</a></li>
-							</c:if>
+							</ul></li></c:if>
 							<c:if test="${username==null}">
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-haspopup="true"
 									aria-expanded="false">Inscription<span class="caret"></span></a>
 									<ul class="dropdown-menu">
 										<li><a href="inscription">S'inscrire</a></li>
-							</c:if>
+							</ul></li></c:if>
 
 
 
