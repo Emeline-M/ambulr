@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!--banner-->
 <section id="banner" class="banner">
@@ -24,16 +24,27 @@
 						<div class="collapse navbar-collapse navbar-right">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="accueil">Home</a></li>
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">Profil / inscription<span
-										class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="inscription">S'inscrire</a></li>
-										<li><a href="profil">Modifier son profil</a></li>
-									</ul></li>
+								<!-- si connecté affiche Profil et Modifier son Profil -->
+								<c:if test="${!(username==null)}">
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-toggle="dropdown" role="button" aria-haspopup="true"
+										aria-expanded="false">Profil<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="validation">Modifier son profil</a></li>
+										</ul></li>
+								</c:if>
+								<c:if test="${username==null}">
+									<li class="dropdown"><a href="#" class="dropdown-toggle"
+										data-toggle="dropdown" role="button" aria-haspopup="true"
+										aria-expanded="false">Inscription<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="inscription">S'inscrire</a></li>
+										</ul></li>
+								</c:if>
 
-								
+
+
+
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-haspopup="true"
 									aria-expanded="false">Informations <span class="caret"></span></a>

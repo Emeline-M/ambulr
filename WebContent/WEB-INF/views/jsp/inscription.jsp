@@ -4,7 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 
-<body>
+
 
 	<div class="container">
 		<div class="col-md-offset-3  col-md-6">
@@ -174,5 +174,3 @@
 			</div>
 		</div>
 	</div>
-	
-</body>
