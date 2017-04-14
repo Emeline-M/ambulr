@@ -1,25 +1,32 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-
-<!--banner-->
-<section id="banner" class="banner">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Insert title here</title>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar"
+	data-offset="60">
+	<!--banner-->
+	<section id="banner" class="banner">
 	<div class="bg-color">
 
 
 
 		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="col-md-offset-3  col-md-9">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse"
-							data-target="#myNavbar">
-							<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-								class="icon-bar"></span>
-						</button>
+		<div class="container-fluid">
+			<div class="col-md-offset-3  col-md-9">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#myNavbar">
+						<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
 
 
-						<!-- menu des pages -->
+					<!-- menu des pages -->
 
 					<div class="collapse navbar-collapse navbar-right">
 						<ul class="nav navbar-nav">
@@ -32,7 +39,6 @@
 									<ul class="dropdown-menu">
 										<li><a href="validation">Modifier son profil</a></li>
 							</ul></li></c:if>
-							
 							<c:if test="${username==null}">
 								<li class="dropdown"><a href="#" class="dropdown-toggle"
 									data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -40,28 +46,29 @@
 									<ul class="dropdown-menu">
 										<li><a href="inscription">S'inscrire</a></li>
 							</ul></li></c:if>
-									
-
-								
-								<li class="dropdown"><a href="#" class="dropdown-toggle"
-									data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">Informations <span class="caret"></span></a>
-									<ul class="dropdown-menu">
-										<li><a href="offres">Formules</a></li>
-										<li><a href="modules">Modules</a></li>
-										<li><a href="temoignage">Témoignages</a></li>
-									</ul></li>
 
 
-								<li class=""><a href="auteurs">Qui sommes nous?</a></li>
-								<li class=""><a href="urgenceindex">Urgences</a></li>
-								<li class=""><a href="FAQ">FAQ</a></li>
-								<li class=""><a href="pagelogout">Déconnexion</a></li>
 
-							</ul>
-						</div>
+
+							<li class="dropdown"><a href="#" class="dropdown-toggle"
+								data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Informations <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="offres">Formules</a></li>
+									<li><a href="modules">Modules</a></li>
+									<li><a href="temoignage">Témoignages</a></li>
+								</ul></li>
+
+
+							<li class=""><a href="auteurs">Qui sommes nous?</a></li>
+							<li class=""><a href="urgenceindex">Urgences</a></li>
+							<li class=""><a href="FAQ">FAQ</a></li>
+							<li class=""><a href="pagelogout">Déconnexion</a></li>
+
+						</ul>
 					</div>
 				</div>
+			</div>
 		</nav>
 		<div class="container">
 			<div class="row">
@@ -84,4 +91,10 @@
 					</div>
 				</div>
 				-->
-</section>
+	</section>
+
+
+
+
+</body>
+</html>
