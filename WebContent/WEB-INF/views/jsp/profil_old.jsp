@@ -30,7 +30,7 @@
 
 
 
-<form:form class="container_profil" action="profil"
+<form:form class="container_profil" action="" method="post"
 	modelAttribute="utilisateur">
 
 	<table>

@@ -10,7 +10,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-offset-3  col-md-6">
-			<form:form action="validation" method="post"
+			<form:form action="validation" method="patch"
 				modelAttribute="utilisateur">
 
 				<div class="form-group">

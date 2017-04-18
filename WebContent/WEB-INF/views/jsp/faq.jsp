@@ -104,11 +104,10 @@
 				</h4>
 			</div>
 			<div id="collapse6" class="panel-collapse collapse">
-				<div class="panel-body">
-					Il vous sera demandé de payer une amende de <strong>50 Euros </strong> si vous nous
-					informez de l’erreur dans un délai de 5 minutes jusqu’à <strong>2500 Euros</strong>
-					si ne prévenez pas le service. 
-				</div>
+				<div class="panel-body">L’opérateur vérifiera pendant l’appel
+					qu’il s’agit bien d’une urgence, dans le cas contraire aucune unité
+					sera envoyée. Toutefois si vous réitérez l’erreur plusieurs fois,
+					l’opérateur peut décider de vous virer.</div>
 			</div>
 		</div>
 

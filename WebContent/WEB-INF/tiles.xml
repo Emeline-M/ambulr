@@ -39,12 +39,14 @@
 			value="/WEB-INF/views/jsp/pageurgenceindex.jsp" />
 	</definition>
 
-	<!-- Configuration de la vue "modifier le profil" -->
+	<!-- Configuration de la vue "modifier le profil" ce n'est pas ça du coup?-->
 	<definition name="page_inscription" extends="base.definition">
 		<put-attribute name="menu" value="/WEB-INF/views/jsp/menu.jsp" />
 		<put-attribute name="title" value="modifier le profil" />
 		<put-attribute name="body" value="/WEB-INF/views/jsp/inscription.jsp" />
 	</definition>
+	
+			
 
 	<!-- Configuration de la vue "modifier le contact_us" -->
 	<definition name="page_contactus" extends="base.definition">

@@ -13,7 +13,7 @@
 				<h3>Contacts</h3>
 				<div class="space"></div>
 				<p>
-					<i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>DEFE <br>
+					<i class="fa fa-map-marker fa-fw pull-left fa-2x"></i>AIX-EN-PROVENCE<br>
 					Notre Ville, NV 140217
 				</p>
 				<div class="space"></div>

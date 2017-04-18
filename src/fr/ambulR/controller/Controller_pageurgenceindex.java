@@ -42,7 +42,6 @@ public class Controller_pageurgenceindex extends HttpServlet {
 	@RequestMapping(value = "/accueilurgenceindex")
 	public String home2(@Valid @ModelAttribute("user") Connexion connexion, BindingResult result, Model model,
 			HttpSession session) {
-		System.out.println("home2");
 		
 		if (!result.hasErrors()) {
 

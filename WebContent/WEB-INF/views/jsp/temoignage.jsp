@@ -12,6 +12,7 @@
 %>
 
 
+  
 <div class="row">
 	<div class="<%=Myclass2%>">
 		<img 
