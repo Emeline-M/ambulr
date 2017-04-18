@@ -23,7 +23,7 @@
 	<!-- On crée le DataSource -->
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://172.31.2.151:3306/Ambulr" />
+		<property name="url" value="jdbc:mysql://172.31.2.136:3306/Ambulr" />
 		<property name="username" value="root" />
 		<property name="password" value="p68Vug5F" />
 	</bean>

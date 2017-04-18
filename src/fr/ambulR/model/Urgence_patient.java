@@ -39,6 +39,17 @@ public class Urgence_patient {
 	
 	@Column (name="long_patient")
     private double long_patient;
+	
+	@Column (name="statut_patient")
+	private String statut_patient;
+
+	public String getStatut_patient() {
+		return statut_patient;
+	}
+
+	public void setStatut_patient(String statut_patient) {
+		this.statut_patient = statut_patient;
+	}
 
 	public int getId_patient() {
 		return id_patient;

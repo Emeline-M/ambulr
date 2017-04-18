@@ -113,6 +113,7 @@ public class Controller_pageurgenceindex extends HttpServlet {
 			double localisation_patient_longitude = Double.parseDouble(localisation_patient_long);
 			Urgence_patient urgence01 = new Urgence_patient();
 			urgence01.setDate_urgence(LaDateOji);
+			urgence01.setStatut_patient("actif");
 			urgence01.setLat_patient(localisation_patient_latitude);
 			urgence01.setLong_patient(localisation_patient_longitude);
 			urgence01.setNom((list_patient.get(0)).getNom());
