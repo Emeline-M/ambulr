@@ -25,6 +25,7 @@
 						<div class="collapse navbar-collapse navbar-right">
 							<ul class="nav navbar-nav">
 								<li class="active"><a href="accueil">Home</a></li>
+
 								<!-- si connecté affiche Profil et Modifier son Profil -->
 								<c:if test="${!(username==null)}">
 									<li class="dropdown"><a href="#" class="dropdown-toggle"
@@ -64,13 +65,20 @@
 									<li class=""><a href="pagelogout">Déconnexion</a></li>
 								</c:if>
 								<c:if test="${(username==null)}">
-								<li role="separator" class="divider"></li>
+									<li role="separator" class="divider"></li>
 									<li class=""><a href="FAQ">FAQ</a></li>
-									
+
 								</c:if>
 								<c:if test="${!(username==null)}">
 									<li class=""><a href="FAQ">FAQ</a></li>
 								</c:if>
+
+								<c:if test="${!(username==null)}">
+									<li class=""><span class="glyphicon glyphicon-user"
+										style="line-height: 3"> ${username}</span></li>
+
+								</c:if>
+
 
 							</ul>
 						</div>
@@ -95,16 +103,7 @@
 			</div>
 		</div>
 	</div>
-	<!--  
-					<div class="overlay-detail text-center">
-						<div class="the-icons">
-							<span class="glyphicon glyphicon-chevron-down"></span>
-						</div>
-					</div>
-				</div>
 
-
-	-->
 </section>
 
 

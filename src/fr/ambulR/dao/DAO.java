@@ -20,6 +20,6 @@ public abstract class DAO<T> {
 		public abstract List<T> findAll();
 		public abstract T save(T object);
 		public abstract boolean delete(T object);
-		public abstract T findByLogin(String username, String password);
+		public abstract List<T> findByLogin(String username, String password);
 
 }

@@ -31,14 +31,14 @@ public class Controller_inscriptionInvalide  extends HttpServlet {
 	@Autowired
 	private patientDAO patient1DAO;
 
-	@RequestMapping(value = "/validation", method = RequestMethod.PATCH)
+	/*@RequestMapping(value = "/validation", method = RequestMethod.PATCH)
 	public String modifierprofil(@ModelAttribute("utilisateur")
 	Connexion connexion, Patient inscrit2, BindingResult result, Model model, HttpSession session, HttpServletRequest req, HttpSession sessionutilisateur) {
 		
 		System.out.println("coucouGETVAlidation");
 		/*model.addAttribute("utilisateur", new Patient());	*/
 		
-		if(req.getSession().getAttribute("username") != null); {
+		/*if(req.getSession().getAttribute("username") != null); {
 		
 			Patient patientdb = patient1DAO.findByLogin(connexion.getIdentifiant(), connexion.getPassword());
 		
@@ -65,11 +65,11 @@ public class Controller_inscriptionInvalide  extends HttpServlet {
 		
 			System.out.println("Validation errors:");
 			
-			return "page_validation";
+			return "page_validation"; 
 		
 		}
 		
-	}
+	}*/
 	
 	
 	@RequestMapping(value = "/validation", method = RequestMethod.POST)

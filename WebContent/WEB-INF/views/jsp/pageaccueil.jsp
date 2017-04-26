@@ -25,7 +25,7 @@
 				<div class="form-group">
 
 					<form:label path="password">Password</form:label>
-					<form:input path="password" class="form-control" type="text"
+					<form:input path="password" class="form-control" type="password"
 						placeholder="Saisir votre mot de passe" />
 					<form:errors path="password" />
 				</div>

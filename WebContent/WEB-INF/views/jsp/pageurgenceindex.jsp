@@ -2,6 +2,18 @@
 	pageEncoding="UTF-8"%>
 
 
+<script language="javascript">
+	var nbclic = 0 // Initialisation à 0 du nombre de clic
+	function CompteClic(formulaire) { // Fonction appelée par le bouton
+		nbclic++; // nbclic+1
+		if (nbclic > 1) { // Plus de 1 clic
+			alert("Vous avez déjà cliqué ce bouton.\nVotre appel est en cours de traitement... Merci de patienter");
+		} else { // 1 seul clic
+			alert("Vous venez d'appeler les urgences");
+		}
+	}
+</script>
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-offset-3  col-md-6">
@@ -15,11 +27,13 @@
 					value="" /> <input type="hidden" id="laDateOji" name="laDateOji"
 					value="" />
 				<div class="space"></div>
-
 				<div class="col-md-offset-4  col-md-7">
-					<input class="btn btn-lg btn-danger" type="button" value="Appel urgence"
-						onclick="start()"  />
+					<INPUT class="btn btn-lg btn-danger" type="button" name="bouton"
+						value="Appel Urgence" onClick="CompteClic(this.form)">
+
 				</div>
+
+
 
 			</form>
 
@@ -38,3 +52,5 @@
 		</div>
 	</div>
 </div>
+
+

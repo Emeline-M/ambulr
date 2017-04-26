@@ -9,6 +9,7 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import fr.ambulR.model.Patient;
 import fr.ambulR.model.Urgence_patient;
 
 @Repository
@@ -48,10 +49,10 @@ public class UrgenceDAO extends DAO<Urgence_patient>{
 	
 	
 	@Override
-    public Urgence_patient findByLogin(String username, String password) {
-        return this.em.createQuery("FROM Urgence_patient where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Urgence_patient.class)
-                .getSingleResult();
-    }
+	   public List<Urgence_patient> findByLogin(String username, String password) {
+	       return this.em.createQuery("FROM Urgence_patient where connexion_identifiant='"+ username + "' and connexion_password='" + password + "'", Urgence_patient.class)
+	               .getResultList();
+	   }
 
 }
 

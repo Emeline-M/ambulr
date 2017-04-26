@@ -1,6 +1,7 @@
 package fr.ambulR.controller;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -20,42 +21,50 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
 
 import fr.ambulR.dao.UrgenceDAO;
+import fr.ambulR.dao.patientDAO;
 import fr.ambulR.model.Connexion;
+import fr.ambulR.model.Patient;
 import fr.ambulR.model.Urgence_patient;
 
 @Controller
 public class Controller_pageurgenceindex extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Override
-	   public void init(ServletConfig config) throws ServletException {
-	      super.init(config);
-	      SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, config.getServletContext());
-	    }
-	
-	
+	public void init(ServletConfig config) throws ServletException {
+		super.init(config);
+		SpringBeanAutowiringSupport.processInjectionBasedOnServletContext(this, config.getServletContext());
+	}
+
 	@Autowired
 	private UrgenceDAO urgenceDAO;
-	
-	
+	@Autowired
+	private patientDAO patientDAO;
 
 	@RequestMapping(value = "/accueilurgenceindex")
 	public String home2(@Valid @ModelAttribute("user") Connexion connexion, BindingResult result, Model model,
 			HttpSession session) {
-		
-		if (!result.hasErrors()) {
+		List<Patient> resultatconnexion = patientDAO.findByLogin(connexion.getIdentifiant(), connexion.getPassword());
 
-			System.out.println("connexion :" + connexion);
-			System.out.println("session :" + session);
+		if (resultatconnexion.size() == 0) {
+			System.out.println("operateur non existant");
+			return "page_accueil";
+		} else {
 
-			session.setAttribute("connexion", connexion);
-			session.setAttribute("username", connexion.getIdentifiant());
-			session.setAttribute("id_user", connexion.getConnexion_id());
-			return "page-urgenceindex";
+			if (!result.hasErrors()) {
 
+				System.out.println("connexion :" + connexion);
+				System.out.println("session :" + session);
+
+				session.setAttribute("connexion", connexion);
+				session.setAttribute("username", connexion.getIdentifiant());
+				session.setAttribute("id_user", connexion.getConnexion_id());
+				return "page-urgenceindex";
+
+			}
+
+			return "page_accueil";
 		}
-
-		return "page_accueil";
 	}
 
 	@RequestMapping(value = "/urgenceindex")
@@ -87,18 +96,18 @@ public class Controller_pageurgenceindex extends HttpServlet {
 																	// FONCTIONNE
 																	// PAS
 																	// ENCORE !
-		
-		//Urgence_patient findByLogin(String username, String password)
+
+		// Urgence_patient findByLogin(String username, String password)
 
 		double localisation_patient_latitude = Double.parseDouble(localisation_patient_lat);
 		double localisation_patient_longitude = Double.parseDouble(localisation_patient_long);
-		
+
 		/*
-		System.out
-				.println("Latitude : " + localisation_patient_latitude + "\n" + "Longitude : " + localisation_patient_longitude);
-		System.out.println(LaDateOji);
-		System.out.println(id_user);*/
-		
+		 * System.out .println("Latitude : " + localisation_patient_latitude +
+		 * "\n" + "Longitude : " + localisation_patient_longitude);
+		 * System.out.println(LaDateOji); System.out.println(id_user);
+		 */
+
 		Urgence_patient urgence01 = new Urgence_patient();
 		urgence01.setDate_urgence(LaDateOji);
 		urgence01.setId_patient(1);
@@ -107,9 +116,7 @@ public class Controller_pageurgenceindex extends HttpServlet {
 		urgence01.setNom("Menneré");
 		urgence01.setPrenom_patient("Bernard");
 		urgence01.setTel_patient("065475236551");
-		this.urgenceDAO.save(urgence01); 
-		
-		
+		this.urgenceDAO.save(urgence01);
 
 		return "page-urgenceindex";
 	}
